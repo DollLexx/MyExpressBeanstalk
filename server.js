@@ -7,15 +7,23 @@ var app = express(),
 path = require('path'),
 publicDir = path.join(__dirname,'public');
 
+hbs.registerPartials(publicDir + '/views/partials');
 app.use(express.static(publicDir))
 app.set('view engine', 'hbs');
 app.set('views', publicDir + '/views');
 
+hbs.registerHelper('getCurrentYear', () => {
+    return new Date().getFullYear();
+});
+
+hbs.registerHelper('screamIt', (text) => {
+    return text.toUpperCase();
+});
+
 //this is how to setup a route in the app
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        pageTitle: 'About Deb\'s application',
-        currentYear: new Date().getFullYear()
+        pageTitle: 'About Deb\'s application'
     });
 });
 

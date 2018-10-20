@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <h1>{{pageTitle}}</h1>
-    <p>Welcome to Deb's application!</p>
-
-    <footer>
-        <p>Copyright DollLexx {{currentYear}}</p>
-    </footer>
+    {{> header}}
+    <p>{{ screamIt 'Welcome to Deb\'s application!'}}</p>
+    <br/>
+    {{> footer}}
 </body>
 
 </html>
