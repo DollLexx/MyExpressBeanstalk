@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Application</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/gradients.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>
+      <p>Welcome to the Chat app</p>
+    </h1>
+    <br />
+
+    <ol id="messages"></ol>
+    <br />
+
+    <h5>Write your message:</h5>
+    <div class="input-group">
+      <form id="message-form" role="form">
+        <div class="form-group">
+          <input class="form-control" name="message" type="text" placeholder="Message" />
+          <button class="btn btn-success">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p class="footer-contents">Designed and developed with ♥ from Deb.</p>
+  </footer>
+
+  <script src="js/set-background.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/libs/jquery-3.1.0.min.js"></script>
+  <script src="/js/chat.js"></script>
+
+</body>
+
+</html>

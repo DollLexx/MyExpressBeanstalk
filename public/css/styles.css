@@ -15,6 +15,12 @@ html {
   background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
 }
 
+form {
+  border-radius: 5px;
+  padding: 20px;
+  float: left;
+}
+
 body {
   font-size: 1.8rem;
 }
@@ -33,6 +39,36 @@ a {
   text-decoration: none;
 }
 
+ol{
+  list-style-type: circle;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  float: left;
+}
+
+input[type=submit] {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -47,7 +83,7 @@ footer, .push {
 
 footer .footer-contents {
   padding: 0 5rem;
-  position: relative;
+  position: absolute;
 }
 
 .website-nav {
